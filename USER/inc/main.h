@@ -3,6 +3,6 @@
 
 #include "stm32f4xx.h"
 
-#define TIMER	500
+#define TIMER	1000
 
 #endif /* MAIN_H_ */

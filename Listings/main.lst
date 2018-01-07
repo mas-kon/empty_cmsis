@@ -19833,7 +19833,7 @@ N#define MAIN_H_
 N
 N#include "stm32f4xx.h"
 N
-N#define TIMER	500
+N#define TIMER	1000
 N
 N#endif /* MAIN_H_ */
 L 3 "USER\src\main.c" 2
@@ -19891,7 +19891,7 @@ N
 Nint main(void)
 N{
 N
-N//	RCC_Init();
+N	RCC_Init();
 N	LED_Init();
 N
 N	SystemCoreClockUpdate();
@@ -19904,25 +19904,25 @@ X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << 
 N		GREEN_LED_On();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (12U));
 N			Delay_mS(TIMER);
-X			Delay_mS(500);
+X			Delay_mS(1000);
 N		GREEN_LED_Off();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (28U));
 N		ORANGE_LED_On();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (13U));
 N			Delay_mS(TIMER);
-X			Delay_mS(500);
+X			Delay_mS(1000);
 N		ORANGE_LED_Off();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (29U));
 N		RED_LED_On();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (14U));
 N			Delay_mS(TIMER);
-X			Delay_mS(500);
+X			Delay_mS(1000);
 N		RED_LED_Off();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (30U));
 N		BLUE_LED_On();
 X		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (15U));
 N			Delay_mS(TIMER);
-X			Delay_mS(500);
+X			Delay_mS(1000);
 N	}
 N	
 N}

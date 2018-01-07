@@ -7,129 +7,130 @@
                   main PROC
 ;;;6      
 ;;;7      int main(void)
-000000  f7fffffe          BL       LED_Init
+000000  f7fffffe          BL       RCC_Init
 ;;;8      {
 ;;;9      
-;;;10     //	RCC_Init();
+;;;10     	RCC_Init();
 ;;;11     	LED_Init();
+000004  f7fffffe          BL       LED_Init
 ;;;12     
 ;;;13     	SystemCoreClockUpdate();
-000004  f7fffffe          BL       SystemCoreClockUpdate
+000008  f7fffffe          BL       SystemCoreClockUpdate
 ;;;14     	SysTick_Config(SystemCoreClock/1000);
-000008  4832              LDR      r0,|L1.212|
-00000a  6800              LDR      r0,[r0,#0]  ; SystemCoreClock
-00000c  f44f727a          MOV      r2,#0x3e8
-000010  fbb0f1f2          UDIV     r1,r0,r2
-000014  1e48              SUBS     r0,r1,#1
-000016  f1b07f80          CMP      r0,#0x1000000
-00001a  d300              BCC      |L1.30|
-00001c  e01b              B        |L1.86|
-                  |L1.30|
-00001e  1e48              SUBS     r0,r1,#1
-000020  f04f22e0          MOV      r2,#0xe000e000
-000024  6150              STR      r0,[r2,#0x14]
-000026  1750              ASRS     r0,r2,#29
-000028  220f              MOVS     r2,#0xf
-00002a  2800              CMP      r0,#0
-00002c  da07              BGE      |L1.62|
-00002e  0713              LSLS     r3,r2,#28
-000030  0e1d              LSRS     r5,r3,#24
-000032  4b29              LDR      r3,|L1.216|
-000034  f000040f          AND      r4,r0,#0xf
-000038  1f24              SUBS     r4,r4,#4
-00003a  551d              STRB     r5,[r3,r4]
-00003c  e003              B        |L1.70|
-                  |L1.62|
-00003e  0713              LSLS     r3,r2,#28
-000040  0e1c              LSRS     r4,r3,#24
-000042  4b26              LDR      r3,|L1.220|
-000044  541c              STRB     r4,[r3,r0]
-                  |L1.70|
-000046  bf00              NOP      
-000048  2000              MOVS     r0,#0
-00004a  f04f22e0          MOV      r2,#0xe000e000
-00004e  6190              STR      r0,[r2,#0x18]
-000050  2007              MOVS     r0,#7
-000052  6110              STR      r0,[r2,#0x10]
-000054  bf00              NOP      
-                  |L1.86|
+00000c  4832              LDR      r0,|L1.216|
+00000e  6800              LDR      r0,[r0,#0]  ; SystemCoreClock
+000010  f44f727a          MOV      r2,#0x3e8
+000014  fbb0f1f2          UDIV     r1,r0,r2
+000018  1e48              SUBS     r0,r1,#1
+00001a  f1b07f80          CMP      r0,#0x1000000
+00001e  d300              BCC      |L1.34|
+000020  e01b              B        |L1.90|
+                  |L1.34|
+000022  1e48              SUBS     r0,r1,#1
+000024  f04f22e0          MOV      r2,#0xe000e000
+000028  6150              STR      r0,[r2,#0x14]
+00002a  1750              ASRS     r0,r2,#29
+00002c  220f              MOVS     r2,#0xf
+00002e  2800              CMP      r0,#0
+000030  da07              BGE      |L1.66|
+000032  0713              LSLS     r3,r2,#28
+000034  0e1d              LSRS     r5,r3,#24
+000036  4b29              LDR      r3,|L1.220|
+000038  f000040f          AND      r4,r0,#0xf
+00003c  1f24              SUBS     r4,r4,#4
+00003e  551d              STRB     r5,[r3,r4]
+000040  e003              B        |L1.74|
+                  |L1.66|
+000042  0713              LSLS     r3,r2,#28
+000044  0e1c              LSRS     r4,r3,#24
+000046  4b26              LDR      r3,|L1.224|
+000048  541c              STRB     r4,[r3,r0]
+                  |L1.74|
+00004a  bf00              NOP      
+00004c  2000              MOVS     r0,#0
+00004e  f04f22e0          MOV      r2,#0xe000e000
+000052  6190              STR      r0,[r2,#0x18]
+000054  2007              MOVS     r0,#7
+000056  6110              STR      r0,[r2,#0x10]
+000058  bf00              NOP      
+                  |L1.90|
 ;;;15     	
 ;;;16     	while (1)
-000056  e03b              B        |L1.208|
-                  |L1.88|
+00005a  e03b              B        |L1.212|
+                  |L1.92|
 ;;;17     	{
 ;;;18     		BLUE_LED_Off();
-000058  4821              LDR      r0,|L1.224|
-00005a  6800              LDR      r0,[r0,#0]
-00005c  f0404000          ORR      r0,r0,#0x80000000
-000060  491f              LDR      r1,|L1.224|
-000062  6008              STR      r0,[r1,#0]
+00005c  4821              LDR      r0,|L1.228|
+00005e  6800              LDR      r0,[r0,#0]
+000060  f0404000          ORR      r0,r0,#0x80000000
+000064  491f              LDR      r1,|L1.228|
+000066  6008              STR      r0,[r1,#0]
 ;;;19     		GREEN_LED_On();
-000064  4608              MOV      r0,r1
-000066  6800              LDR      r0,[r0,#0]
-000068  f4405080          ORR      r0,r0,#0x1000
-00006c  6008              STR      r0,[r1,#0]
+000068  4608              MOV      r0,r1
+00006a  6800              LDR      r0,[r0,#0]
+00006c  f4405080          ORR      r0,r0,#0x1000
+000070  6008              STR      r0,[r1,#0]
 ;;;20     			Delay_mS(TIMER);
-00006e  f44f70fa          MOV      r0,#0x1f4
-000072  f7fffffe          BL       Delay_mS
+000072  f44f707a          MOV      r0,#0x3e8
+000076  f7fffffe          BL       Delay_mS
 ;;;21     		GREEN_LED_Off();
-000076  481a              LDR      r0,|L1.224|
-000078  6800              LDR      r0,[r0,#0]
-00007a  f0405080          ORR      r0,r0,#0x10000000
-00007e  4918              LDR      r1,|L1.224|
-000080  6008              STR      r0,[r1,#0]
+00007a  481a              LDR      r0,|L1.228|
+00007c  6800              LDR      r0,[r0,#0]
+00007e  f0405080          ORR      r0,r0,#0x10000000
+000082  4918              LDR      r1,|L1.228|
+000084  6008              STR      r0,[r1,#0]
 ;;;22     		ORANGE_LED_On();
-000082  4608              MOV      r0,r1
-000084  6800              LDR      r0,[r0,#0]
-000086  f4405000          ORR      r0,r0,#0x2000
-00008a  6008              STR      r0,[r1,#0]
+000086  4608              MOV      r0,r1
+000088  6800              LDR      r0,[r0,#0]
+00008a  f4405000          ORR      r0,r0,#0x2000
+00008e  6008              STR      r0,[r1,#0]
 ;;;23     			Delay_mS(TIMER);
-00008c  f44f70fa          MOV      r0,#0x1f4
-000090  f7fffffe          BL       Delay_mS
+000090  f44f707a          MOV      r0,#0x3e8
+000094  f7fffffe          BL       Delay_mS
 ;;;24     		ORANGE_LED_Off();
-000094  4812              LDR      r0,|L1.224|
-000096  6800              LDR      r0,[r0,#0]
-000098  f0405000          ORR      r0,r0,#0x20000000
-00009c  4910              LDR      r1,|L1.224|
-00009e  6008              STR      r0,[r1,#0]
+000098  4812              LDR      r0,|L1.228|
+00009a  6800              LDR      r0,[r0,#0]
+00009c  f0405000          ORR      r0,r0,#0x20000000
+0000a0  4910              LDR      r1,|L1.228|
+0000a2  6008              STR      r0,[r1,#0]
 ;;;25     		RED_LED_On();
-0000a0  4608              MOV      r0,r1
-0000a2  6800              LDR      r0,[r0,#0]
-0000a4  f4404080          ORR      r0,r0,#0x4000
-0000a8  6008              STR      r0,[r1,#0]
+0000a4  4608              MOV      r0,r1
+0000a6  6800              LDR      r0,[r0,#0]
+0000a8  f4404080          ORR      r0,r0,#0x4000
+0000ac  6008              STR      r0,[r1,#0]
 ;;;26     			Delay_mS(TIMER);
-0000aa  f44f70fa          MOV      r0,#0x1f4
-0000ae  f7fffffe          BL       Delay_mS
+0000ae  f44f707a          MOV      r0,#0x3e8
+0000b2  f7fffffe          BL       Delay_mS
 ;;;27     		RED_LED_Off();
-0000b2  480b              LDR      r0,|L1.224|
-0000b4  6800              LDR      r0,[r0,#0]
-0000b6  f0404080          ORR      r0,r0,#0x40000000
-0000ba  4909              LDR      r1,|L1.224|
-0000bc  6008              STR      r0,[r1,#0]
+0000b6  480b              LDR      r0,|L1.228|
+0000b8  6800              LDR      r0,[r0,#0]
+0000ba  f0404080          ORR      r0,r0,#0x40000000
+0000be  4909              LDR      r1,|L1.228|
+0000c0  6008              STR      r0,[r1,#0]
 ;;;28     		BLUE_LED_On();
-0000be  4608              MOV      r0,r1
-0000c0  6800              LDR      r0,[r0,#0]
-0000c2  f4404000          ORR      r0,r0,#0x8000
-0000c6  6008              STR      r0,[r1,#0]
+0000c2  4608              MOV      r0,r1
+0000c4  6800              LDR      r0,[r0,#0]
+0000c6  f4404000          ORR      r0,r0,#0x8000
+0000ca  6008              STR      r0,[r1,#0]
 ;;;29     			Delay_mS(TIMER);
-0000c8  f44f70fa          MOV      r0,#0x1f4
-0000cc  f7fffffe          BL       Delay_mS
-                  |L1.208|
-0000d0  e7c2              B        |L1.88|
+0000cc  f44f707a          MOV      r0,#0x3e8
+0000d0  f7fffffe          BL       Delay_mS
+                  |L1.212|
+0000d4  e7c2              B        |L1.92|
 ;;;30     	}
 ;;;31     	
 ;;;32     }
 ;;;33     
                           ENDP
 
-0000d2  0000              DCW      0x0000
-                  |L1.212|
-                          DCD      SystemCoreClock
+0000d6  0000              DCW      0x0000
                   |L1.216|
-                          DCD      0xe000ed18
+                          DCD      SystemCoreClock
                   |L1.220|
-                          DCD      0xe000e400
+                          DCD      0xe000ed18
                   |L1.224|
+                          DCD      0xe000e400
+                  |L1.228|
                           DCD      0x40020c18
 
 ;*** Start embedded assembler ***

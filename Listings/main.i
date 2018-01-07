@@ -7081,7 +7081,7 @@ void Delay_mS(uint32_t nTime) ;
 int main(void)
 {
 
-
+	RCC_Init();
 	LED_Init();
 
 	SystemCoreClockUpdate();
@@ -7091,16 +7091,16 @@ int main(void)
 	{
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (31U));
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (12U));
-			Delay_mS(500);
+			Delay_mS(1000);
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (28U));
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (13U));
-			Delay_mS(500);
+			Delay_mS(1000);
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (29U));
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (14U));
-			Delay_mS(500);
+			Delay_mS(1000);
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (30U));
 		((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0C00U))->BSRR |= (0x1U << (15U));
-			Delay_mS(500);
+			Delay_mS(1000);
 	}
 	
 }
