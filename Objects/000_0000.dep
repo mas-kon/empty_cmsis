@@ -1,0 +1,21 @@
+Dependencies for Project '000', Target '0000': (DO NOT MODIFY !)
+F (.\Startup\startup_stm32f407xx.s)(0x58230598)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_0000-Ig:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Ig:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx.lst --xref -o .\objects\startup_stm32f407xx.o --depend .\objects\startup_stm32f407xx.d)
+F (.\CMSIS\src\system_stm32f4xx.c)(0x5A3D227A)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I.\RTE\_0000-Ig:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Ig:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\objects\system_stm32f4xx.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (g:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58230598)
+I (g:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x582305AA)
+I (.\CMSIS\inc\core_cm4.h)(0x5823057E)
+I (g:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BBB84)
+I (.\CMSIS\inc\core_cmInstr.h)(0x5823057E)
+I (.\CMSIS\inc\cmsis_armcc.h)(0x5823057E)
+I (.\CMSIS\inc\core_cmFunc.h)(0x5823057E)
+I (.\CMSIS\inc\core_cmSimd.h)(0x5823057E)
+I (g:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582305AA)
+F (.\USER\src\main.c)(0x5A3D21F1)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I.\RTE\_0000-Ig:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Ig:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\objects\main.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\CMSIS\inc\stm32f407xx.h)(0x582305AA)
+I (.\CMSIS\inc\core_cm4.h)(0x5823057E)
+I (g:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BBB84)
+I (.\CMSIS\inc\core_cmInstr.h)(0x5823057E)
+I (.\CMSIS\inc\cmsis_armcc.h)(0x5823057E)
+I (.\CMSIS\inc\core_cmFunc.h)(0x5823057E)
+I (.\CMSIS\inc\core_cmSimd.h)(0x5823057E)
+I (g:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582305AA)

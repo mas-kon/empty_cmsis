@@ -1,0 +1,11 @@
+.\objects\led_init.o: USER\src\led_init.c
+.\objects\led_init.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\led_init.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\objects\led_init.o: .\CMSIS\inc\core_cm4.h
+.\objects\led_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led_init.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\led_init.o: .\CMSIS\inc\cmsis_armcc.h
+.\objects\led_init.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\led_init.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\led_init.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\led_init.o: .\USER\inc\led_init.h
