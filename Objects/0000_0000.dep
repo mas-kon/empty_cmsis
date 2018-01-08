@@ -1,59 +1,0 @@
-Dependencies for Project '0000', Target '0000': (DO NOT MODIFY !)
-F (.\Startup\startup_stm32f407xx.s)(0x5A3D519D)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\!Couds\YandexDisk\STM32\Learn_FreeRTOS\0000\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 520" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx.lst --xref -o .\objects\startup_stm32f407xx.o --depend .\objects\startup_stm32f407xx.d)
-F (.\CMSIS\src\system_stm32f4xx.c)(0x5A3D519C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I D:\!Couds\YandexDisk\STM32\Learn_FreeRTOS\0000\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F407xx -DSTM32F407xx-o .\objects\system_stm32f4xx.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x582313A8)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x582313BA)
-I (.\CMSIS\inc\core_cm4.h)(0x5A3D51B6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\CMSIS\inc\core_cmInstr.h)(0x5A3D5188)
-I (.\CMSIS\inc\cmsis_armcc.h)(0x5A3D5199)
-I (.\CMSIS\inc\core_cmFunc.h)(0x5A3D5187)
-I (.\CMSIS\inc\core_cmSimd.h)(0x5A3D5188)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582313BA)
-F (.\USER\src\main.c)(0x5A50CD5B)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I D:\!Couds\YandexDisk\STM32\Learn_FreeRTOS\0000\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F407xx -DSTM32F407xx-o .\objects\main.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x582313A8)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x582313BA)
-I (.\CMSIS\inc\core_cm4.h)(0x5A3D51B6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\CMSIS\inc\core_cmInstr.h)(0x5A3D5188)
-I (.\CMSIS\inc\cmsis_armcc.h)(0x5A3D5199)
-I (.\CMSIS\inc\core_cmFunc.h)(0x5A3D5187)
-I (.\CMSIS\inc\core_cmSimd.h)(0x5A3D5188)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582313BA)
-I (.\USER\inc\main.h)(0x5A51E487)
-I (.\USER\inc\led_init.h)(0x5A3D5180)
-I (.\USER\inc\rcc_init.h)(0x5A3DF88B)
-I (.\USER\inc\delay.h)(0x5A3DEFF2)
-F (.\USER\src\rcc_init.c)(0x5A3DFAD6)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I D:\!Couds\YandexDisk\STM32\Learn_FreeRTOS\0000\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F407xx -DSTM32F407xx-o .\objects\rcc_init.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\rcc_init.crf --depend .\objects\rcc_init.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x582313A8)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x582313BA)
-I (.\CMSIS\inc\core_cm4.h)(0x5A3D51B6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\CMSIS\inc\core_cmInstr.h)(0x5A3D5188)
-I (.\CMSIS\inc\cmsis_armcc.h)(0x5A3D5199)
-I (.\CMSIS\inc\core_cmFunc.h)(0x5A3D5187)
-I (.\CMSIS\inc\core_cmSimd.h)(0x5A3D5188)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582313BA)
-I (.\USER\inc\rcc_init.h)(0x5A3DF88B)
-F (.\USER\src\led_init.c)(0x5A3D5185)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I D:\!Couds\YandexDisk\STM32\Learn_FreeRTOS\0000\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F407xx -DSTM32F407xx-o .\objects\led_init.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\led_init.crf --depend .\objects\led_init.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x582313A8)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x582313BA)
-I (.\CMSIS\inc\core_cm4.h)(0x5A3D51B6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\CMSIS\inc\core_cmInstr.h)(0x5A3D5188)
-I (.\CMSIS\inc\cmsis_armcc.h)(0x5A3D5199)
-I (.\CMSIS\inc\core_cmFunc.h)(0x5A3D5187)
-I (.\CMSIS\inc\core_cmSimd.h)(0x5A3D5188)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582313BA)
-I (.\USER\inc\led_init.h)(0x5A3D5180)
-F (.\USER\src\delay.c)(0x5A3DF08F)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\Listings\\" -I ..\0000 -I .\CMSIS\inc -I .\USER\inc-I D:\!Couds\YandexDisk\STM32\Learn_FreeRTOS\0000\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F407xx -DSTM32F407xx-o .\objects\delay.o --list_dir ".\\Listings\\" --list --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x582313A8)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x582313BA)
-I (.\CMSIS\inc\core_cm4.h)(0x5A3D51B6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\CMSIS\inc\core_cmInstr.h)(0x5A3D5188)
-I (.\CMSIS\inc\cmsis_armcc.h)(0x5A3D5199)
-I (.\CMSIS\inc\core_cmFunc.h)(0x5A3D5187)
-I (.\CMSIS\inc\core_cmSimd.h)(0x5A3D5188)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x582313BA)
-I (.\USER\inc\delay.h)(0x5A3DEFF2)
